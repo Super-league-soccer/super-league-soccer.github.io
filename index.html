@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .picture-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .picture-item {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Picture List from 1 to 20</h1>
+    <ul class="picture-list">
+        <script>
+            const pictureList = document.querySelector('.picture-list');
+
+            for (let i = 1; i <= 20; i++) {
+                const listItem = document.createElement('li');
+                listItem.className = 'picture-item';
+
+                const img = document.createElement('img');
+                img.src = `images/picture${i}.jpg`; // Change the image path accordingly
+                img.alt = `Picture ${i}`;
+
+                listItem.appendChild(img);
+                pictureList.appendChild(listItem);
+            }
+        </script>
+    </ul>
+</body>
+</html>
