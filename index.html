@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SLS - Premier League</title>
     <style>
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+            position: relative;
+            transition: transform 0.2s, text-decoration 0.2s;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -49,6 +65,11 @@
 </head>
 <body>
     <header>
+         <div class="navbar">
+            <a href="https://super-league-soccer.github.io/about">About</a>
+            <a href="mailto:noreply@watchmalware.co.uk">Contact</a>
+        </div>
+        
         <h1>SLS Premier League</h1>
         <p>Be apart of the Super League Soccer Premier league!</p>
     </header>
