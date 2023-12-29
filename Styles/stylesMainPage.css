@@ -72,12 +72,3 @@
       right: 10px;
     }
 
-    .header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: blue;
-      padding: 15px 0;
-      z-index: 1000;
-    }
-
