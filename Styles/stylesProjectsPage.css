@@ -15,31 +15,37 @@ body {
 
 /* Header styles */
 header {
+  cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li a {
+  cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
   text-decoration: none;
   color: #333;
 }
 
 /* Main content styles */
 main {
+  cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
   padding: 20px;
 }
 
 section {
+  cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
   margin-bottom: 30px;
 }
 
 h2 {
+  cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
   color: #555;
 }
 
 /* Download button styles */
 .btn {
+  cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
   display: inline-block;
   padding: 10px 20px;
   background-color: #4285f4;
@@ -49,5 +55,6 @@ h2 {
 }
 
 .btn:hover {
+  cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
   background-color: #356fce;
 }
