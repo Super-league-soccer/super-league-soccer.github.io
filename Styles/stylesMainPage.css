@@ -65,3 +65,9 @@
       cursor: pointer;
       color: #fff;
     }
+
+    .bottom-right {
+      position: fixed;
+      bottom: 10px; /* Adjust this value to change the distance from the bottom */
+      right: 10px; /* Adjust this value to change the distance from the right */
+    }
