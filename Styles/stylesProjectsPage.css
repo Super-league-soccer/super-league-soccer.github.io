@@ -1,5 +1,6 @@
 /* Reset some default browser styles */
 body, h1, h2, h3, p, ul, li {
+  cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
   margin: 0;
   padding: 0;
 }
