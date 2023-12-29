@@ -59,3 +59,48 @@ h2 {
   cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
   background-color: #356fce;
 }
+
+    .sidebar {
+          cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      padding-top: 20px;
+      transition: 0.3s;
+      overflow-x: hidden;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Bangers', cursive;
+    }
+
+    .sidebar h2 {
+          cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
+      color: #fff;
+      text-align: center;
+    }
+
+    .sidebar ul {
+          cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+          cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .sidebar ul li a {
+          cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .sidebar ul li a:hover {
+          cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
+      color: #ddd;
+    }
