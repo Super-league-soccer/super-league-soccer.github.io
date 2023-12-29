@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ranxlus</title>
+  <link rel="stylesheet" href="Styles/stylesMainPage.css">
+  <link rel="icon" href="IMG/faivcon.ico" type="image/x-icon"/>
+</head>
+<body>
+  <div class="open-btn" onclick="toggleSidebar()">☰</div>
+  <div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">✖</div>
+    <h2>Sidebar</h2>
+    <ul>
+      <li><a href="#">Youtube Channel</a></li>
+      <li><a href="jnrbge.html">Join Roblox Game With Place ID</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="mailto:maximumuk401@gmail.com">Contact Ranxlus</a></li>
+    </ul>
+  </div>
+  <div class="content" id="main-content">
+    <h1>Hello, I'm Ranxlus.</h1>
+    <p>This is the main content area of the webpage.</p>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const content = document.getElementById('main-content');
+
+      if (sidebar.style.width === '250px') {
+        sidebar.style.width = '0';
+        content.style.marginLeft = '0';
+      } else {
+        sidebar.style.width = '250px';
+        content.style.marginLeft = '250px';
+      }
+    }
+
+    function closeSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const content = document.getElementById('main-content');
+
+      sidebar.style.width = '0';
+      content.style.marginLeft = '0';
+    }
+  </script>
+</body>
+</html>

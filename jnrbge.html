@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Roblox Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: coral;
+      text-align: center;
+      margin-top: 100px;
+    }
+    h1 {
+      color: #3498db;
+    }
+    input {
+      padding: 8px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      padding-top: 20px;
+      transition: 0.3s;
+      overflow-x: hidden;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Bangers', cursive;
+    }
+
+    .sidebar h2 {
+      color: #fff;
+      text-align: center;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .sidebar ul li a:hover {
+      color: #ddd;
+    }
+
+    .content {
+      margin-left: 0;
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .open-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="open-btn" onclick="toggleSidebar()">☰</div>
+  <div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">✖</div>
+    <h2>Sidebar</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="jnrbge.html">Join Roblox Game With Place ID</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <h1>Join Roblox Game</h1>
+  <script>
+    function initRoblox() {
+      const placeId = document.getElementById("placeid").value;
+      if (placeId) {
+        window.location.href = "roblox://placeId=" + placeId;
+      } else {
+        alert("Please enter a Place ID.");
+      }
+    }
+
+ function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const content = document.getElementById('main-content');
+
+      if (sidebar.style.width === '250px') {
+        sidebar.style.width = '0';
+        content.style.marginLeft = '0';
+      } else {
+        sidebar.style.width = '250px';
+        content.style.marginLeft = '250px';
+      }
+    }
+    function closeSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const content = document.getElementById('main-content');
+
+      sidebar.style.width = '0';
+      content.style.marginLeft = '0';
+    }
+  </script>
+  <p><b>PLACE ID:</b></p>
+  <input id="placeid" />
+  <br />
+  <button onclick="initRoblox()">Play</button>
+</body>
+</html>
