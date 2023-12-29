@@ -10,46 +10,14 @@
     <div class="close-btn" onclick="closeSidebar()">✖</div>
     <h2>Sidebar</h2>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="jnrbge.html">Join Roblox Game With Place ID</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="https://ranxlus.github.io/">Home</a></li>
     </ul>
   </div>
   <h1>Join Roblox Game</h1>
-  <script>
-    function initRoblox() {
-      const placeId = document.getElementById("placeid").value;
-      if (placeId) {
-        window.location.href = "roblox://placeId=" + placeId;
-      } else {
-        alert("Please enter a Place ID.");
-      }
-    }
-
- function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const content = document.getElementById('main-content');
-
-      if (sidebar.style.width === '250px') {
-        sidebar.style.width = '0';
-        content.style.marginLeft = '0';
-      } else {
-        sidebar.style.width = '250px';
-        content.style.marginLeft = '250px';
-      }
-    }
-    function closeSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const content = document.getElementById('main-content');
-
-      sidebar.style.width = '0';
-      content.style.marginLeft = '0';
-    }
-  </script>
+  <script src="JS/scriptRobloxINIT.js"></script>
   <p><b>PLACE ID:</b></p>
   <input id="placeid" />
-  <br />
+  <br/>
   <button onclick="initRoblox()">Play</button>
 </body>
 </html>
