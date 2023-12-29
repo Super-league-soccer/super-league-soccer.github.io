@@ -1,5 +1,5 @@
     body {
-      background-image: url('https://ranxlus.github.io/IMG/background.jpg'); /* Replace with the image URL */
+      background-image: url('https://ranxlus.github.io/IMG/background.jpg');
       background-size: cover;
       margin: 0;
       font-family: 'Bangers', cursive;
@@ -68,6 +68,16 @@
 
     .bottom-right {
       position: fixed;
-      bottom: 10px; /* Adjust this value to change the distance from the bottom */
-      right: 10px; /* Adjust this value to change the distance from the right */
+      bottom: 10px;
+      right: 10px;
     }
+
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: blue;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
