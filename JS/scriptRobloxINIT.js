@@ -3,7 +3,7 @@
       if (placeId) {
         window.location.href = "roblox://placeId=" + placeId;
       } else {
-        alert("Please enter a Place ID.");
+        alert("enter smth plz.");
       }
     }
 
