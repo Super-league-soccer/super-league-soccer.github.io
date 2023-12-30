@@ -1,3 +1,14 @@
+    body {
+              background-image: url('https://watchmalware.github.io/Images/background.jpg'); /* Replace with the image URL */
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+      background-color: #f0f0f0;
+      margin: 0 auto;
+    }
+
 .sidebar {
           cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
       height: 100%;
