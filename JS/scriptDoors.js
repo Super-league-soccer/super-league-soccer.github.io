@@ -1,4 +1,16 @@
-       window.onload = function () {
+ function handleConsoleErrors(event) {
+    var error = event.error;
+    if (error) {
+      alert('An error occurred: ' + error.message);
+    }
+  }
+
+  // Listening for errors in the console
+  window.addEventListener('error', handleConsoleErrors);
+
+
+
+window.onload = function () {
             document.getElementById("gtk-gold-count").addEventListener("input", () => {
                 ConvertToKnobs();
             })
