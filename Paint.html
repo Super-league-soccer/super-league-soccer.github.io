@@ -17,8 +17,16 @@
   </style>
 </head>
 <body>
+  <div class="open-btn" onclick="toggleSidebar()">☰ This is the Sidebar Button</div>
+  <div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">✖</div>
+    <h2>Sidebar</h2>
+    <ul>
+      <li><a href="https://ranxlus.github.io/">Home</a></li>
+    </ul>
+  </div>
+  
   <canvas id="gameCanvas" width="800" height="600"></canvas>
-
   <script src="JS/scriptGameCanvas.js"></script>
 </body>
 </html>
