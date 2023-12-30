@@ -1,6 +1,6 @@
     body {
       cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
-      background-color: coral;
+      background-image: url('https://watchmalware.github.io/Images/background.jpg'); /* Replace with the image URL */
       background-size: cover;
       margin: 0;
       font-family: 'Bangers', cursive;
@@ -94,4 +94,13 @@
         cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
       font-size: 36px;
       margin: 0;
+    }
+
+ footer {
+      color: #ff0000;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
