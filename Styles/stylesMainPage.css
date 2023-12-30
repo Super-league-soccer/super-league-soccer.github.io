@@ -52,6 +52,7 @@
     }
 
     .content {
+         color: white;
           cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
       margin-left: 0;
       padding: 20px;
