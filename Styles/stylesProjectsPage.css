@@ -8,6 +8,7 @@ body, h1, h2, h3, p, ul, li {
 /* Basic styles for body */
 body {
   cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
+   background-image: url('https://watchmalware.github.io/Images/background.jpg'); /* Replace with the image URL */
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
