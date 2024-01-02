@@ -7,6 +7,9 @@
       border: 2px solid #333;
       background-color: #ddd;
     }
+    #content {
+      display: none; /* Initially hide the content */
+    }
 body {
       cursor: url('https://ranxlus.github.io/IMG/custom-cursor.cur'), auto;
       background-image: url('https://watchmalware.github.io/Images/background.jpg'); /* Replace with the image URL */
