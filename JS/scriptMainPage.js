@@ -18,3 +18,9 @@
       sidebar.style.width = '0';
       content.style.marginLeft = '0';
     }
+    function enterSite() {
+      var button = document.getElementById('enterButton');
+      var audio = document.getElementById('loopAudio');
+      audio.play();
+      button.style.display = 'none'; // Hide the button
+    }
