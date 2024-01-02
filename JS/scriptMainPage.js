@@ -18,10 +18,3 @@
       sidebar.style.width = '0';
       content.style.marginLeft = '0';
     }
-    function showContent() {
-      var content = document.getElementById('content');
-      var audio = document.getElementById('loopAudio');
-      audio.play();
-      content.style.display = 'block'; // Show the content
-      document.getElementById('enterButton').style.display = 'none'; // Hide the button
-    }
