@@ -22,5 +22,5 @@
       var button = document.getElementById('enterButton');
       var audio = document.getElementById('loopAudio');
       audio.play();
-      button.style.display = 'none'; // Hide the button
+      button.style.display = 'block'; // Hide the button
     }
