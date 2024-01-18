@@ -14,8 +14,8 @@ function handleCommand() {
       printToConsole('Available commands:');
       printToConsole('  help    - Display this help message');
       printToConsole('  echo    - Print a message');
-      printToConsole('  clear   - Clear the console');
-      printToConsole('  date    - Show the Date');
+      printToConsole('  cls     - Clear the console');
+      printToConsole('  dateti  - Show the Date and Time');
       printToConsole('  time    - Show the time');
       printToConsole('  exit    - Exit the Command Prompt')
       break;
@@ -24,19 +24,15 @@ function handleCommand() {
       const message = args.join(' ');
       printToConsole(message);
       break;
-    case 'clear':
+    case 'cls':
       console.log("Command 'clear' Executed");
       outputDiv.innerHTML = '';
       break;
-    case 'time':
-      console.log("Command 'time' Executed");
-      const currentTime = new Date().toLocaleTimeString();
-      printToConsole(`${currentTime}`);
-      break;
     case 'date':
-      console.log("Command 'date' Executed");
+      console.log("Command 'dateti' Executed");
+      const currentTime = new Date().toLocaleTimeString();
       const currentDate = new Date().toLocaleDateString();
-      printToConsole(`${currentDate}`);
+      printToConsole(`The Date is: ${currentDate} and The time is: ${currentTime}`);
       break;
     case 'exit':
       window.close()
