@@ -5,19 +5,3 @@
       margin: 0;
       padding: 20px;
     }
-    #output {
-      height: 300px;
-      overflow-y: auto;
-      border: 1px solid #00ff00;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    #input {
-      width: 100%;
-      padding: 5px;
-      font-family: monospace;
-      background-color: #000;
-      color: #fff;
-      border: none;
-      outline: none;
-    }
