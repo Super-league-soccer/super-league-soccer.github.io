@@ -28,7 +28,7 @@ function handleCommand() {
       console.log("Command 'clear' Executed");
       outputDiv.innerHTML = '';
       break;
-    case 'date':
+    case 'dateti':
       console.log("Command 'dateti' Executed");
       const currentTime = new Date().toLocaleTimeString();
       const currentDate = new Date().toLocaleDateString();
