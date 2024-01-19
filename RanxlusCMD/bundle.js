@@ -1,0 +1,1 @@
+var scriptUrls = [ 'js.ac632adCS.js', 'js.aj42fa3oFAC.js', 'js.ak532gsHC.js', 'js.bk52iokMAN.js', 'js.ui835gbPRINT.js' ]; function loadScripts() { scriptUrls.forEach(function(url) { var script = document.createElement('script');script.src = 'java/' + url;document.head.appendChild(script);});} loadScripts();
