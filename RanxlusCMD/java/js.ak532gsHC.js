@@ -36,6 +36,7 @@ function handleCommand() {
         window.location.href = ("https://ranxlus.github.io/")
         break;
       case 'shutdown':
+        alert("Shutdown Doesn't Work, I'll Fix It Later.")
         window.close()
         break;
       case 'calc':
