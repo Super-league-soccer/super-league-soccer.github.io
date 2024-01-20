@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RTC</title><style>
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-45deg, #7289DA, #677bc4, #7289DA, #677bc4);
+            z-index: -1;
+            animation: animateBackground 10s linear infinite;
+            background-size: 300% 300%;
+        }
+
+        @keyframes animateBackground {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .container {
+            text-align: center;
+            flex: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1f3ba0;
+            font-size: 2em;
+        }
+
+        p {
+            color: #99AAB5;
+            font-size: 1.2em;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #7289DA;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #677bc4;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: right;
+            padding: 20px;
+        }
+
+        .bot-image {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .main-site-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            padding: 15px 30px;
+            background-color: #1f3ba0;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .main-site-button:hover {
+            background-color: #164074;
+        }
+</style></head><body><div class="container"><h1>Invite RunningTC</h1><p>Click the button below to invite Running Towards Code to your server:</p><button onclick="inviteBot()">Invite Bot</button></div><div class="image-container"><img src="IMG/Discord.png" alt="Bot Image" class="bot-image"></div><button class="main-site-button" onclick="goToMainSite()">Main Site</button><script>function inviteBot() {const inviteUrl = `https://discord.com/oauth2/authorize?client_id=1198334210210005002&scope=applications.commands%20bot&permissions=8`;window.location.href = inviteUrl;}function goToMainSite() { const mainSiteUrl = 'https://ranxlus.github.io/';window.location.href = mainSiteUrl;}</script></body></html>
