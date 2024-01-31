@@ -2,10 +2,11 @@ body {
     font-family: 'Honk', sans-serif;
     }
 
-stopka {
-         color: black;
-         text-align: center;
-         padding: 10px 0;
-         position: fixed;
-         bottom: 0;
-}
+         stopka {
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
