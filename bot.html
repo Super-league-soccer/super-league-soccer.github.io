@@ -1,5 +1,11 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CMD</title><style>
-body {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot</title>
+    <style>
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
@@ -78,6 +84,7 @@ body {
             max-width: 100%;
             border-radius: 50%;
         }
+
         .main-site-button {
             position: absolute;
             bottom: 20px;
@@ -95,4 +102,28 @@ body {
         .main-site-button:hover {
             background-color: #164074;
         }
-</style></head><body><div class="container"><h1>Invite Countryballer</h1><p>Click the button below to invite Countryballer to your server:</p><button onclick="inviteBot()">Invite Bot</button></div><div class="image-container"><img src="IMG/Discord.png" alt="Bot Image" class="bot-image"></div><button class="main-site-button" onclick="goToMainSite()">Main Site</button><script>function inviteBot() {const inviteUrl = `https://discord.com/oauth2/authorize?client_id=1202297130107273296`;window.location.href = inviteUrl;}function goToMainSite() { const mainSiteUrl = 'https://ranxlus.github.io/';window.location.href = mainSiteUrl;}</script></body></html>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invite Countryballer</h1>
+        <p>Click the button below to invite Countryballer to your server:</p>
+        <button onclick="inviteBot()">Invite Bot</button>
+    </div>
+    <div class="image-container">
+        <img src="IMG/Discord.png" alt="Bot Image" class="bot-image">
+    </div>
+    <button class="main-site-button" onclick="goToMainSite()">Main Site</button>
+    <script>
+        function inviteBot() {
+            const inviteUrl = `https://discord.com/oauth2/authorize?client_id=1202297130107273296`;
+            window.location.href = inviteUrl;
+        }
+
+        function goToMainSite() {
+            const mainSiteUrl = 'https://ranxlus.github.io/';
+            window.location.href = mainSiteUrl;
+        }
+    </script>
+</body>
+</html>
